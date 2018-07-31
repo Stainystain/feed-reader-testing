@@ -1,3 +1,27 @@
+# Feed Reader Testing - Udacity Project 5 
+
+
+## Task
+
+Complete a test suite for a web-based application that reads RSS feeds.
+
+## Installing 
+
+The project assests were available to download and all was in place to dive straight into creating the tests.
+
+To view the RSS feed reader with all tests online, use the following link:
+``` ```
+
+Alternativly clone the repo below and run ***index.html*** in a supported browser.
+```https://github.com/Stainystain/feed-reader-testing.git```
+
+The original, unedited project assets are available to clone from:
+```http://github.com/udacity/frontend-nanodegree-feedreader```
+
+
+
+
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
