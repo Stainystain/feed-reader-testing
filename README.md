@@ -9,14 +9,15 @@ Complete a test suite for a web-based application that reads RSS feeds.
 
 The project assests were available to download and all was in place to dive straight into creating the tests.
 
-To view the RSS feed reader with all tests online, use the following link:
-``` ```
-
-Alternativly clone the repo below and run ***index.html*** in a supported browser.
-```https://github.com/Stainystain/feed-reader-testing.git```
+To view the RSS feed reader with all tests complete clone the repo below and run ***index.html*** in a supported browser.
+```
+https://github.com/Stainystain/feed-reader-testing.git
+```
 
 The original, unedited project assets are available to clone from:
-```http://github.com/udacity/frontend-nanodegree-feedreader```
+```
+http://github.com/udacity/frontend-nanodegree-feedreader
+```
 
 
 
