@@ -29,16 +29,16 @@ $(function() {
         // Feed URL Check
         it('url is defined', function() {
             for(let feed of allFeeds) {  // loops through feeds
-              expect(feed.url).toBeDefined();   // url defined check
-              expect(feed.url.length).not.toBe(0);    // url empty check
+              expect(feed.url).toBeDefined();   // check if url is defined
+              expect(feed.url.length).not.toBe(0);    // check if url is empty
             }
         });
 
         // Feed Name Check
         it('name is defined', function() {
             for(let feed of allFeeds) {  // loops through feeds
-              expect(feed.name).toBeDefined();   // name defined check
-              expect(feed.name.length).not.toBe(0);    // name empty check
+              expect(feed.name).toBeDefined();   // check if name is defined
+              expect(feed.name.length).not.toBe(0);    // check if name is empty
             }
         });
     });
@@ -51,11 +51,7 @@ $(function() {
             const body = document.querySelector('body'); // select body element
             expect(body.classList.contains('menu-hidden')).toBe(true); // check menu is hidden using menu-hidden class
         });
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+
         // Menu toggles when menu icon is clicked
         it('menu display toggles', function() {
             const body = document.querySelector('body'); // select body element
@@ -66,8 +62,21 @@ $(function() {
             expect(body.classList.contains('menu-hidden')).toBe(true); // check menu toggles off when icon is clicked again
         });
     });
-    /* TODO: Write a new test suite named "Initial Entries" */
 
+    // Initial entries test suite
+    describe('Initial Entries', function() {
+
+        // Call loadFeed & singnal to Jasmine when done to proceed with test
+        beforeEach(function(done) {
+          loadFeed(0, done);
+        });
+
+        // Feed container contains an entry when loadFeed
+        it('loadFeed completes', function() {
+            const feed = document.querySelector('.feed'); // select feed
+            expect(feed.children.length > 0).toBe(true); // check feed container contains an entry
+        });
+    });
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
